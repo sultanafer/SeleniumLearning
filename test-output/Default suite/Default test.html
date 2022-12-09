@@ -1,0 +1,219 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Dec 04 19:28:13 EST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (425 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='stepsA.RunnerFileStebA.runScenario()'><b>runScenario</b><br>Test class: stepsA.RunnerFileStebA<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC001_Login and Logout", "Automated Leaftaps Application"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sulta\eclipse-workspace\SeleniumLearning\.\drivers\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepsA.LogInStepA.launch_chrome_browser_and_load_URL(LogInStepA.java:17)
+	at ✽.Launch chrome browser and load URL(file:src/test/java/feature_2/doc.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace178604517", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace178604517'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sulta\eclipse-workspace\SeleniumLearning\.\drivers\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepsA.LogInStepA.launch_chrome_browser_and_load_URL(LogInStepA.java:17)
+	at ✽.Launch chrome browser and load URL(file:src/test/java/feature_2/doc.feature:5)
+</pre></div></td>
+<td>0</td>
+<td>stepsA.RunnerFileStebA@2abf4075</td></tr>
+<tr>
+<td title='stepsA.RunnerFileStebA.runScenario()'><b>runScenario</b><br>Test class: stepsA.RunnerFileStebA<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC001_Login and Logout", "Automated Leaftaps Application"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sulta\eclipse-workspace\SeleniumLearning\.\drivers\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepsA.LogInStepA.launch_chrome_browser_and_load_URL(LogInStepA.java:17)
+	at ✽.Launch chrome browser and load URL(file:src/test/java/feature_2/doc.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1543518287", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1543518287'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sulta\eclipse-workspace\SeleniumLearning\.\drivers\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepsA.LogInStepA.launch_chrome_browser_and_load_URL(LogInStepA.java:17)
+	at ✽.Launch chrome browser and load URL(file:src/test/java/feature_2/doc.feature:5)
+</pre></div></td>
+<td>0</td>
+<td>stepsA.RunnerFileStebA@2abf4075</td></tr>
+<tr>
+<td title='stepsA.RunnerFileStebA.runScenario()'><b>runScenario</b><br>Test class: stepsA.RunnerFileStebA<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC002_CreatLead", "Automated Leaftaps Application"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sulta\eclipse-workspace\SeleniumLearning\.\drivers\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepsA.LogInStepA.launch_chrome_browser_and_load_URL(LogInStepA.java:17)
+	at ✽.Launch chrome browser and load URL(file:src/test/java/feature_2/doc.feature:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace464872674", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace464872674'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sulta\eclipse-workspace\SeleniumLearning\.\drivers\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepsA.LogInStepA.launch_chrome_browser_and_load_URL(LogInStepA.java:17)
+	at ✽.Launch chrome browser and load URL(file:src/test/java/feature_2/doc.feature:24)
+</pre></div></td>
+<td>0</td>
+<td>stepsA.RunnerFileStebA@2abf4075</td></tr>
+<tr>
+<td title='stepsA.RunnerFileStebA.runScenario()'><b>runScenario</b><br>Test class: stepsA.RunnerFileStebA<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC002_CreatLead", "Automated Leaftaps Application"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sulta\eclipse-workspace\SeleniumLearning\.\drivers\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepsA.LogInStepA.launch_chrome_browser_and_load_URL(LogInStepA.java:17)
+	at ✽.Launch chrome browser and load URL(file:src/test/java/feature_2/doc.feature:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1064905627", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1064905627'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sulta\eclipse-workspace\SeleniumLearning\.\drivers\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepsA.LogInStepA.launch_chrome_browser_and_load_URL(LogInStepA.java:17)
+	at ✽.Launch chrome browser and load URL(file:src/test/java/feature_2/doc.feature:24)
+</pre></div></td>
+<td>0</td>
+<td>stepsA.RunnerFileStebA@2abf4075</td></tr>
+<tr>
+<td title='stepsA.RunnerFileStebA.runScenario()'><b>runScenario</b><br>Test class: stepsA.RunnerFileStebA<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC003_CreatAccount", "Automated Leaftaps Application"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sulta\eclipse-workspace\SeleniumLearning\.\drivers\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepsA.LogInStepA.launch_chrome_browser_and_load_URL(LogInStepA.java:17)
+	at ✽.Launch chrome browser and load URL(file:src/test/java/feature_2/doc.feature:44)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1260440107", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1260440107'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sulta\eclipse-workspace\SeleniumLearning\.\drivers\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepsA.LogInStepA.launch_chrome_browser_and_load_URL(LogInStepA.java:17)
+	at ✽.Launch chrome browser and load URL(file:src/test/java/feature_2/doc.feature:44)
+</pre></div></td>
+<td>0</td>
+<td>stepsA.RunnerFileStebA@2abf4075</td></tr>
+</table><p>
+</body>
+</html>
